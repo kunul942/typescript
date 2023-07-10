@@ -75,14 +75,6 @@
     console.log({ superman });
 })();
 (() => {
-    const addNumbers = (a, b) => a + b;
-    const greet = (name) => `Hola ${name}`;
-    const saveTheWorld = () => `El mundo está salvado!`;
-    let myFunction;
-    myFunction = saveTheWorld;
-    console.log(myFunction());
-})();
-(() => {
     const hero = 'Flash';
     function returnName() {
         return hero;
@@ -148,6 +140,7 @@
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const villians = ['Omega Rojo', 'Dormammu', 'Duende Verde'];
     villians.forEach(v => console.log(v.toUpperCase()));
+    numbers.forEach(v => console.log(v));
 })();
 (() => {
     let isSuperman = true;
