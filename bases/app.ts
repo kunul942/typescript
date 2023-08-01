@@ -1,4 +1,7 @@
-(()=>{
+(()=> {
+
+
+
   type Carro = {
     carroceria: string;
     modelo: string;
@@ -30,7 +33,7 @@
   // Villanos debe de ser un arreglo de objetos personalizados
   type Villano = {
     nombre: string;
-    edad: number | undefined;
+    edad: number;
     mutante: boolean;
   }
   
@@ -59,23 +62,28 @@
     poder:"psiquico",
     estatura: 1.78
   };
-  
-  console.log({ charles })
+  console.log('paso por aquí');
   
   type Apocalipsis = {
     lider: boolean;
     miembros: string[]
   }
   
+  console.log('paso por aca');
+  
   const apocalipsis:Apocalipsis = {
     lider:true,
     miembros: ["Magneto","Tormenta","Psylocke","Angel"]
   }
+  
+  console.log(apocalipsis);
   
   // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
   let mystique: Charles | Apocalipsis;
   
   mystique = charles;
   mystique = apocalipsis;
-})()
+  
 
+
+})()

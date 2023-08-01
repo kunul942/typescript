@@ -1,7 +1,7 @@
 (()=> {
 
     // strictNullChecks
-    // let isActive: boolean = null;
+    let isActive: boolean = null;
 
     
 
